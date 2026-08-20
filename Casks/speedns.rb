@@ -31,7 +31,6 @@ cask "speedns" do
   name "speedns"
   desc "Cross-platform DNS transport speed test CLI"
   homepage "https://github.com/crypt0rr/SpeeDNS"
-  license "MIT"
 
   livecheck do
     skip "Auto-generated on release."
