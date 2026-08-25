@@ -3,28 +3,27 @@ cask "speedns" do
   version "0.6.1"
 
   on_macos do
-    on_intel do
-      sha256 "70665f77babf22e6e6be50047390b984e32a7f6ee0cad870d99425118c4f1b42"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/crypt0rr/SpeeDNS/releases/download"
-    end
     on_arm do
       sha256 "3ad73fb483f9597bb1da58ad3578f4989958ca7e3b8a9a78e6865180c0208301"
       url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+    end
+    on_intel do
+      sha256 "70665f77babf22e6e6be50047390b984e32a7f6ee0cad870d99425118c4f1b42"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_amd64.tar.gz",
+          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
     end
   end
-
   on_linux do
-    on_intel do
-      sha256 "7184087799e4a8c10779b49fa0343342ceeb47190b3fe0b83b151de9445bceb5"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/crypt0rr/SpeeDNS/releases/download"
-    end
     on_arm do
       sha256 "ff97b34f933b6457739d17da55241c356203127dc00328e2f52fa2e769890d00"
       url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+    end
+    on_intel do
+      sha256 "7184087799e4a8c10779b49fa0343342ceeb47190b3fe0b83b151de9445bceb5"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_amd64.tar.gz",
+          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
     end
   end
 
@@ -37,5 +36,4 @@ cask "speedns" do
   end
 
   binary "speedns"
-
 end
