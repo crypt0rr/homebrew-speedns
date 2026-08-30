@@ -1,0 +1,33 @@
+name: Validate Homebrew cask
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate cask on macOS
+    runs-on: macos-latest
+    steps:
+      - name: Check out tap
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Install checkout as a local tap
+        shell: bash
+        run: brew tap crypt0rr/speedns "${GITHUB_WORKSPACE}"
+
+      - name: Validate cask paths and Homebrew metadata
+        shell: bash
+        run: bash scripts/validate-cask.sh
+
+      - name: Run collision fixtures
+        shell: bash
+        run: bash scripts/validate-cask-fixture.sh
