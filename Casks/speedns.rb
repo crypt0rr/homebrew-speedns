@@ -5,25 +5,21 @@ cask "speedns" do
   on_macos do
     on_arm do
       sha256 "cc467e226ee5e3b894754484d4bd916fd89faa339611440ae5d12d0e09095f05"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_arm64.tar.gz",
-          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
       sha256 "3baa9af0b63a25cd2fa5d418195173ba1bd409cda5a910bd5229fcc4c226f0bc"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_amd64.tar.gz",
-          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
       sha256 "752e7689adda4aabf7f283e281a3d8c235153264755345241e357c71a103f3b2"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_arm64.tar.gz",
-          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
       sha256 "ee2c0b35187d510d8d7399ad3027ef073e82a2facd4d28c7bf36530f2c1b29b4"
-      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_amd64.tar.gz",
-          verified: "github.com/crypt0rr/SpeeDNS/releases/download"
+      url "https://github.com/crypt0rr/SpeeDNS/releases/download/v#{version}/SpeeDNS_#{version}_linux_amd64.tar.gz"
     end
   end
 
